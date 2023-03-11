@@ -84,17 +84,46 @@ console.log((a && b && c && d && e) ? true : false)
 
 /* 
 11. Figure out the result of the following comparison expression first without using console.log().After you decide the result confirm it using console.log()
+*/
 
-    - 4 > 3
-    - 4 >= 3
-    - 4 < 3
-    - 4 <= 3
-    - 4 == 4
-    - 4 === 4
-    - 4 != 4
-    - 4 !== 4
-    - 4 != '4'
-    - 4 == '4'
-    - 4 === '4'
-    - Find the length of python and jargon and make a falsy comparison statement.
-    */
+4 > 3  // true 
+4 >= 3 // true
+4 < 3  // false
+4 <= 3 //  false
+4 == 4 // true
+4 === 4 // true
+4 != 4  // false
+4 !== 4  // false
+4 != '4'  // false
+4 == '4'  // true 
+4 === '4' // false
+
+// - Find the length of python and jargon and make a falsy comparison statement.
+
+// 12. Use the Date object to do the following activities
+const date = new Date()
+// - What is the year today?
+const year = new Date().getFullYear()
+console.log("The year is", year)
+
+// - What is the month today as a number?
+const month = date.getMonth() + 1
+console.log("The Month is", month)
+// - What is the date today?
+const curentDate = date.getDate()
+console.log("The Date is", curentDate)
+
+// - What is the day today as a number?
+const day = date.getDay()
+console.log("The Day is", day)
+
+// - What is the hours now?
+const hours = date.getHours()
+console.log("The Hours are", hours)
+
+// - What is the minutes now?
+const minutes = date.getMinutes()
+console.log(minutes);
+// - Find out the numbers of seconds elapsed from January 1, 1970 to now.
+const seconds = Math.floor(new Date().getTime() / 1000)
+console.log(seconds)
