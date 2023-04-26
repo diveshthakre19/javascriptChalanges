@@ -1,0 +1,9 @@
+body {
+  height: 100vh;
+  background: silver;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid blueviolet;
+}
